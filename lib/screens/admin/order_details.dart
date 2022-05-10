@@ -15,7 +15,6 @@ class _OrderDetailsState extends State<OrderDetails> {
   void initState() {
     super.initState();
     Future.delayed(Duration.zero, () {
-      final email = ModalRoute.of(context).settings.arguments as String;
       setState(() {
         // usersStream = FirebaseFirestore.instance
         //     .collection('order')
@@ -28,9 +27,9 @@ class _OrderDetailsState extends State<OrderDetails> {
        // print(doc.id.isEmpty)  ;
           });
         });
-      });
-    });
-  }
+      }
+
+
 
   @override
   Widget build(BuildContext context) {

@@ -63,6 +63,7 @@ void main() async {
   ));
 }
 
+// ignore: must_be_immutable
 class MyApp extends StatelessWidget {
   static const String id = 'MyApp';
 

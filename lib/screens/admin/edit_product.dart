@@ -1,9 +1,6 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:e_commerce/model/product.dart';
 import 'package:e_commerce/provider/modalProgressHUD.dart';
-import 'package:e_commerce/screens/admin/add_product.dart';
 import 'package:e_commerce/screens/admin/admin_panel.dart';
-import 'methodes/add_product.dart';
 import 'methodes/edit_product.dart';
 import 'package:e_commerce/widget/sign_up.dart';
 import 'package:e_commerce/widget/textformfield_1.dart';
@@ -33,7 +30,6 @@ class _EditProductState extends State<EditProduct> {
  var productId ;
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       final arguments = ModalRoute.of(context).settings.arguments as Map;

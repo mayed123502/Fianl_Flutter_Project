@@ -1,20 +1,17 @@
-import 'dart:convert';
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:e_commerce/model/product.dart';
 import 'package:e_commerce/provider/counter_order.dart';
 import 'package:e_commerce/screens/user/cartPage.dart';
 import 'package:e_commerce/screens/user/favoritePage.dart';
 import 'package:e_commerce/screens/user/methodes/produt_details.dart';
-import 'package:e_commerce/screens/user/methodes/unicorn_Button.dart';
 import 'package:e_commerce/screens/user/searchPage.dart';
 import 'package:e_commerce/screens/user/settingsPage.dart';
 import 'package:provider/provider.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:unicorndial/unicorndial.dart';
 import 'methodes/filtter_category.dart';
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class HomePage extends StatefulWidget {
   static const String id = 'HomePage';
   int counter = 0;
@@ -30,6 +27,7 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    // ignore: deprecated_member_use
     final childButtons = List<UnicornButton>();
 
     childButtons.add(UnicornButton(
@@ -113,6 +111,9 @@ class _HomePageState extends State<HomePage> {
 
   GridView buildGridView(
       AsyncSnapshot<QuerySnapshot> snapshot, BuildContext context) {
+      
+
+
     return GridView.builder(
         itemCount: snapshot.data.docs.length,
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -137,6 +138,7 @@ class _HomePageState extends State<HomePage> {
                 price: snapshot.data.docs[index]['price'],
                 id: snapshot.data.docs[index].id,
                 favorite: snapshot.data.docs[index]['Favorit'],
+                quantity: null,
               );
               Navigator.pushNamed(context, ProductDetails.id,
                   arguments: product);

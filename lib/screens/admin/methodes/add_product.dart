@@ -17,7 +17,9 @@ Future<void> addProduct(
         'price': price.text.toString().trim(), // Stokes and Sons
         'description': description.text.toString().trim(),
         'category': category.text.toString().trim(),
-        'image': image.text.toString().trim(), // 42
+        'image': image.text.toString().trim(),
+        'Favorit': "false", // 42
+// 42
 // 42
 // 42
       })

@@ -2,6 +2,7 @@ import 'package:e_commerce/provider/invisible_icon.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+// ignore: non_constant_identifier_names
 TextFormField TextFormFieldAll(String hintText,
     TextEditingController controller,  bool obscureText,Function function,
     { BuildContext ctx,bool suffixIcon,IconData prefixIcon, }) {
@@ -49,12 +50,14 @@ TextFormField TextFormFieldAll(String hintText,
     ),
   );
 }
+// ignore: missing_return
 String validatorEmail(val) {
   if (!val.contains('@')) {
     return 'Not a valid email.';
   }
 }
 
+// ignore: missing_return
 String validatorPassword(val) {
   if (val.length > 20) {
     return "Password can't to be larger than 20 letter";
@@ -63,6 +66,7 @@ String validatorPassword(val) {
   }
 }
 
+// ignore: missing_return
 String validatorName(val) {
   if (val.length > 20) {
     return "Name can't to be larger than 15 letter";
@@ -70,6 +74,7 @@ String validatorName(val) {
     return "Name can't to be less than 4 letter";
   }
 }
+// ignore: missing_return
 String validatorPrice(val) {
   if (val.length > 20) {
     return "Price can't to be larger than 15 letter";
@@ -77,6 +82,7 @@ String validatorPrice(val) {
     return "Price can't to be less than 1 letter";
   }
 }
+// ignore: missing_return
 String validatorDescription(val) {
   if (val.length > 50) {
     return "Description can't to be larger than 50 letter";
@@ -85,6 +91,7 @@ String validatorDescription(val) {
   }
 }
 
+// ignore: missing_return
 String validatorCategory(val) {
   if (val.length > 100) {
     return "Category can't to be larger than 100 letter";
@@ -92,8 +99,9 @@ String validatorCategory(val) {
     return "Category can't to be less than 3 letter";
   }
 }
+// ignore: missing_return
 String validatorImage(val) {
-  if (val.length > 40) {
+  if (val.length > 300) {
     return "Image can't to be larger than 40 letter";
   } else if (val.length < 3) {
     return "Image can't to be less than 3 letter";

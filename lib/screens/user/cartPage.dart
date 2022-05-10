@@ -1,10 +1,10 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:e_commerce/provider/addProductToCart.dart';
 import 'package:e_commerce/screens/user/homePage.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class CartPage extends StatefulWidget {
   static const String id = 'CartPage';

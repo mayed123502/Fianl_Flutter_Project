@@ -1,5 +1,8 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 
+// ignore: non_constant_identifier_names
 Container FacebookLogin(Function onPressed) {
   return Container(
     child: RaisedButton(

@@ -3,7 +3,7 @@ import 'package:e_commerce/auth/sign_up_screen.dart';
 
 import 'package:e_commerce/widget/log_in.dart';
 import 'package:e_commerce/widget/sign_up.dart';
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 
 class SignOrLogin extends StatelessWidget {
@@ -11,10 +11,12 @@ class SignOrLogin extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // ignore: non_constant_identifier_names
     SignInScreen() {
       Navigator.pushNamed(context, LogInScreen.id);
     }
 
+    // ignore: non_constant_identifier_names
     SigUpScreen() {
       Navigator.pushNamed(context, SignUpScreen.id);
     }

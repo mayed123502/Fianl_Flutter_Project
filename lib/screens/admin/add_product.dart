@@ -1,7 +1,6 @@
 import 'package:e_commerce/provider/modalProgressHUD.dart';
 import 'package:e_commerce/screens/admin/admin_panel.dart';
 import 'methodes/add_product.dart';
-import 'package:e_commerce/widget/log_in.dart';
 import 'package:e_commerce/widget/sign_up.dart';
 import 'package:e_commerce/widget/textformfield_1.dart';
 import 'package:flutter/material.dart';

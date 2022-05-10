@@ -2,7 +2,6 @@ import 'package:e_commerce/model/product.dart';
 import 'package:e_commerce/provider/addProductToCart.dart';
 import 'package:e_commerce/provider/counter_order.dart';
 import 'package:e_commerce/screens/user/homePage.dart';
-import 'package:e_commerce/screens/user/methodes/add_order.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

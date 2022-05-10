@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
+// ignore: non_constant_identifier_names
 Stream<QuerySnapshot> FilterCategory(int index) {
   switch (index) {
     case 1:

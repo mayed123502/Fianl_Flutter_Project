@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:e_commerce/provider/modalProgressHUD.dart';
 import 'package:e_commerce/widget/showSnackBar.dart';
@@ -8,6 +10,7 @@ import 'package:provider/provider.dart';
 final CollectionReference users =
     FirebaseFirestore.instance.collection('users');
 
+// ignore: non_constant_identifier_names
 Container SignUp(Function onPressed, String text, width) {
   return Container(
     child: RaisedButton(

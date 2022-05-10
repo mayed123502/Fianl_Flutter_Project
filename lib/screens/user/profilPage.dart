@@ -1,14 +1,14 @@
+// ignore_for_file: deprecated_member_use
+
 import 'dart:io';
 
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:e_commerce/provider/imageProfil.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
-import 'package:provider/provider.dart';
 
 class ProfilePage extends StatefulWidget {
   static const String id = 'ProfilePage';
@@ -27,7 +27,6 @@ class _ProfilePageState extends State<ProfilePage> {
   var imageFromFireBase;
   @override
   void didChangeDependencies() {
-    // TODO: implement didChangeDependencies
     super.didChangeDependencies();
     FirebaseFirestore.instance
         .collection('users')
@@ -201,13 +200,9 @@ class _ProfilePageState extends State<ProfilePage> {
     });
   }
 
+  // ignore: non_constant_identifier_names
   void UploadImage() async {
     var docsId;
-    Future<dynamic> users = FirebaseFirestore.instance
-        .collection('users')
-        .where('email', isEqualTo: FirebaseAuth.instance.currentUser.email)
-        .get()
-        .then((snapshot) => docsId = snapshot.docs[0].id);
 
     FirebaseStorage storage = FirebaseStorage.instance;
     Reference ref = storage.ref().child("image1" + DateTime.now().toString());

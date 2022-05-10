@@ -1,3 +1,5 @@
+// ignore_for_file: missing_required_param
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:e_commerce/model/product.dart';
 import 'package:e_commerce/provider/filter_category.dart';
@@ -85,7 +87,7 @@ class _ShowProductState extends State<ShowProduct> {
           return ListView(
             children: snapshot.data.docs.map((DocumentSnapshot document) {
               Map<String, dynamic> data =
-                  document.data() as Map<String, dynamic>;
+                  document.data();
               return showCategory(
                   name: data['name'],
                   des: data['description'],
@@ -100,7 +102,7 @@ class _ShowProductState extends State<ShowProduct> {
                           price: data['price'],
                           description: data['description'],
                           category:  data['description'],
-                          image: data['image'],
+                          image: data['image'], favorite: null, 
                         ),
                         'productId':document.id
                       },

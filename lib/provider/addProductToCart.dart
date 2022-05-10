@@ -1,4 +1,3 @@
-import 'package:e_commerce/model/product.dart';
 import 'package:flutter/material.dart';
 
 class AddProductToCart with ChangeNotifier {

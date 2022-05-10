@@ -1,4 +1,3 @@
-import 'package:e_commerce/screens/admin/admin_panel.dart';
 import 'package:flutter/material.dart';
 
 Widget showCategory({String name, String des, String image,Function functionEdit,Function functionDelete,}) {

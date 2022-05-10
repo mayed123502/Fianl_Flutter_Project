@@ -3,6 +3,7 @@ import 'package:e_commerce/screens/admin/admin_panel.dart';
 import 'package:e_commerce/screens/admin/order_details.dart';
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class ViewOrder extends StatelessWidget {
   static const String id = 'ViewOrder';
   final Stream<QuerySnapshot> _usersStream =
@@ -53,7 +54,7 @@ class ViewOrder extends StatelessWidget {
                       orderNum++;
 
                       Map<String, dynamic> data =
-                          document.data() as Map<String, dynamic>;
+                          document.data();
                       return Column(
                         children: [
                           SizedBox(

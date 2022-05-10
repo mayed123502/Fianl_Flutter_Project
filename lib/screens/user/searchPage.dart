@@ -1,9 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:e_commerce/model/product.dart';
-import 'package:e_commerce/provider/search_product.dart';
 import 'package:e_commerce/screens/user/methodes/produt_details.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 class SearchPage extends StatefulWidget {
   static const String id = 'SearchPage';
@@ -79,6 +77,7 @@ class _SearchPageState extends State<SearchPage> {
                             padding: const EdgeInsets.all(8.0),
                             child: InkWell(
                               onTap: (){
+                                // ignore: missing_required_param
                                 Product product = Product(
                                   name: snapshot.data.docs[index]['name'],
                                   category: snapshot.data.docs[index]['category'],

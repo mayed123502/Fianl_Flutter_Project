@@ -1,9 +1,12 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:e_commerce/provider/modalProgressHUD.dart';
 import 'package:e_commerce/widget/showSnackBar.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+// ignore: non_constant_identifier_names
 Container LogIn(Function onPressed) {
   return Container(
     padding: const EdgeInsets.all(1.0),

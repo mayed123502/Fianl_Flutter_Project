@@ -1,5 +1,4 @@
 import 'package:e_commerce/provider/filter_category.dart';
-import 'package:e_commerce/screens/admin/show_product.dart';
 import 'package:e_commerce/screens/user/favoritePage.dart';
 import 'package:e_commerce/widget/sign_up.dart';
 import 'package:flutter/cupertino.dart';
