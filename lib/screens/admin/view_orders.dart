@@ -55,6 +55,7 @@ class ViewOrder extends StatelessWidget {
 
                       Map<String, dynamic> data =
                           document.data();
+                          
                       return Column(
                         children: [
                           SizedBox(

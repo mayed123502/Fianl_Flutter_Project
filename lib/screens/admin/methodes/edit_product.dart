@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 CollectionReference product = FirebaseFirestore.instance.collection('product');
 
 Future<void> updateProduct(String id, TextEditingController name,
+
     TextEditingController price,
     TextEditingController description,
     TextEditingController category,

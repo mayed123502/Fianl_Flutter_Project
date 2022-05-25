@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'profilPage.dart';
 
 class SettingsPage extends StatelessWidget {
+  
   static const String id = 'SettingsPage';
 
   @override

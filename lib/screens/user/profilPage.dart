@@ -11,6 +11,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 
 class ProfilePage extends StatefulWidget {
+  
   static const String id = 'ProfilePage';
 
   @override

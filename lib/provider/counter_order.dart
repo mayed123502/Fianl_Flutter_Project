@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 
 class CounterOrder with ChangeNotifier {
+  
   int counter = 1;
 
   addProduct() {

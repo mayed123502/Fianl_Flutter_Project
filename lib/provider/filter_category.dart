@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class FilterCategoryItem with ChangeNotifier {
+  
   String category;
   String categoryUser;
 

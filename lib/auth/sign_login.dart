@@ -1,6 +1,5 @@
 import 'package:e_commerce/auth/log_in_screen.dart';
 import 'package:e_commerce/auth/sign_up_screen.dart';
-
 import 'package:e_commerce/widget/log_in.dart';
 import 'package:e_commerce/widget/sign_up.dart';
 

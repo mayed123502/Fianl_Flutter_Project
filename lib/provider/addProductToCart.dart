@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AddProductToCart with ChangeNotifier {
+  
   List<Map<String, String>> itemId = [];
   addProduct(Map<String, String> id) {
     Map<String, String> item = {'name': id['name']};

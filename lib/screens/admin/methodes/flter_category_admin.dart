@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class FilterCategory extends StatefulWidget {
+  
   static const String id = 'FilterCategory';
 
   @override

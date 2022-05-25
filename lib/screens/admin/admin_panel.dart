@@ -13,6 +13,7 @@ import 'package:provider/provider.dart';
 import 'your_profile.dart';
 
 class AdminPanel extends StatelessWidget {
+  
   static const String id = 'AdminPanel';
 
   @override

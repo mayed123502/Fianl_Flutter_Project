@@ -32,6 +32,7 @@ class _EditProductState extends State<EditProduct> {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) async {
+      
       final arguments = ModalRoute.of(context).settings.arguments as Map;
       var product = arguments['product'] as Product;
       productId=arguments['productId'];

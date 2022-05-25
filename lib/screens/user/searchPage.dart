@@ -11,6 +11,7 @@ class SearchPage extends StatefulWidget {
 }
 
 class _SearchPageState extends State<SearchPage> {
+  
   Stream<QuerySnapshot> querySnapshot;
   String text = '';
 

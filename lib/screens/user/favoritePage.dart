@@ -16,6 +16,7 @@ class _FavoritePageState extends State<FavoritePage> {
   Stream<QuerySnapshot> querySnapshot;
   @override
   void initState() {
+    
     super.initState();
     if (Provider.of<FilterCategoryItem>(context, listen: false).categoryUser ==
         null) {
